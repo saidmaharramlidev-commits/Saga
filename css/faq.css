@@ -1,0 +1,213 @@
+#mainFaq {
+    width: 100%;
+    display: flex;
+    min-height: 500px;
+    justify-content: center;
+    padding-bottom: 50px;
+
+
+}
+
+#faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+#faq-wrapper h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+
+#faqs {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#faqBtn-wrapper {
+    margin-top: 30px;
+    width: 15%;
+}
+
+#faqBtn {
+    background-color: #D3F200;
+    color: black;
+    width: 100%;
+}
+
+#moreFaq-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+#stillQuiz {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    border: 1px solid #D3F200;
+    border-radius: 20px;
+}
+
+#stillQuiz h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#stillQuiz h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#quizCta-wrapper {
+    margin-top: 15px;
+    width: 15%;
+}
+
+#quizCta {
+    width: 100%;
+    color: black;
+    background-color: #D3F200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+    #faqBtn-wrapper {
+        width: 20%;
+    }
+
+    #quizCta-wrapper {
+        width: 20%;
+    }
+}
+
+@media(max-width:900px) {
+    #faqBtn-wrapper {
+        width: 25%;
+    }
+}
+
+@media(max-width:800px) {
+    #quizCta-wrapper {
+        width: 30%;
+    }
+}
+
+
+@media(max-width:700px) {
+
+    #faq-wrapper h1 {
+        font-size: 2rem;
+    }
+
+
+
+    #faqBtn-wrapper {
+        width: 30%;
+    }
+
+    #stillQuiz h1 {
+        font-size: 1.5rem;
+    }
+
+    #stillQuiz h2 {
+        font-size: 1rem;
+    }
+
+    #stillQuiz {
+        height: 200px;
+    }
+
+
+
+
+}
+
+@media(max-width:600px) {
+
+    #faq-wrapper {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    #faq-wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    #mainFaq {
+        min-height: 400px;
+    }
+
+    #quizCta-wrapper {
+        width: 40%;
+    }
+
+    #stillQuiz {
+        height: 180px;
+    }
+}
+
+@media(max-width:400px) {
+    #faq-wrapper h1 {
+        font-size: 1.4rem;
+    }
+
+    #faqs {
+        gap: 10px;
+    }
+
+    #stillQuiz {
+        height: 160px;
+    }
+
+    #stillQuiz h1 {
+        font-size: 1.2rem;
+    }
+
+    #stillQuiz h2 {
+        font-size: 0.8rem;
+    }
+
+    #quizCta-wrapper {
+        width: 50%;
+    }
+
+}

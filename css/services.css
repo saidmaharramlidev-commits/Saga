@@ -1,0 +1,297 @@
+#homeServices {
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#headerOfServices {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+#services {
+    width: 90%;
+    min-height: 350px;
+}
+
+
+#service-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    width: 22%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #070707;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 3rem;
+}
+
+.service h4 {
+    color: white;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ctaService {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.6s;
+}
+
+.ctaService:hover {
+    background-color: #D3F200;
+    color: black;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+
+#whychoose {
+    margin-top: 100px;
+    width: 100%;
+    min-height: 700px;
+}
+
+#whychoose h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#whychoose-divs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.whychoose-div {
+    position: relative;
+    width: 23%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+
+.picOfReview {
+    width: 100%;
+    height: 350px;
+}
+
+.pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.whychoose-div h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.whychoose-div p {
+    color: silver;
+    padding: 5px;
+}
+
+
+.arrow-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px dotted #D3F200;
+    color: #D3F200;
+    transition: 0.5s;
+}
+
+
+
+.whychoose-div:hover {
+
+    .arrow-wrapper {
+        background-color: #D3F200;
+        color: black;
+        rotate: calc(45deg);
+        transition: 0.5s;
+
+    }
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1100px) {
+    .service {
+        width: 30%;
+    }
+
+    .whychoose-div {
+        width: 30%;
+    }
+}
+
+@media(max-width:800px) {
+    .service {
+        width: 40%;
+    }
+
+    .whychoose-div {
+        width: 40%;
+    }
+
+    #whychoose h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:600px) {
+    #service-wrapper {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .whychoose-div {
+        width: 45%;
+    }
+
+    #whychoose h1 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:500px) {
+
+    #whychoose h1 {
+        font-size: 1.5rem;
+    }
+
+    #whychoose-divs {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whychoose-div {
+        width: 80%;
+        min-height: 430px;
+    }
+
+    .picOfReview {
+        height: 250px;
+    }
+
+
+
+}
+
+@media(max-width:500px) {
+
+    #whychoose h1 {
+        font-size: 1.3rem;
+    }
+
+    .whychoose-div {
+        width: 100%;
+    }
+
+}

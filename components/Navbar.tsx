@@ -7,12 +7,12 @@ import Logo from "../public/navbarLogo.png"
 import MenuIcon from '@mui/icons-material/Menu';
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
-import { setNavbar } from "@/redux/counterSlice";
+import { setNavbar, setNavbarMode } from "@/redux/counterSlice";
 
 function Navbar() {
 
 
-    const { isNavbarOpen } = useSelector((state: RootState) => state.counter)
+    const { isNavbarOpen, navbarMode } = useSelector((state: RootState) => state.counter)
     const dispatch = useDispatch()
 
 
@@ -31,11 +31,16 @@ function Navbar() {
                     <Image id="logo" src={Logo} alt="Logo" />
                 </div>
                 <div id="endpoints" className={isNavbarOpen ? "active" : ''}>
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Services</a>
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
+                    <a href="" className={navbarMode == "home" ? "activeEndpoint" : ''}
+                        onClick={() => dispatch(setNavbarMode("home"))}>Home</a>
+                    <a href="" className={navbarMode == "about" ? "activeEndpoint" : ''}
+                        onClick={() => dispatch(setNavbarMode("about"))}>About</a>
+                    <a href="" className={navbarMode == "services" ? "activeEndpoint" : ''}
+                        onClick={() => dispatch(setNavbarMode("services"))}>Services</a>
+                    <a href="" className={navbarMode == "blog" ? "activeEndpoint" : ''}
+                        onClick={() => dispatch(setNavbarMode("blog"))}>Blog</a>
+                    <a href="" className={navbarMode == "contact" ? "activeEndpoint" : ''}
+                        onClick={() => dispatch(setNavbarMode("contact"))}>Contact</a>
                 </div>
 
                 <div id="navbarCtas">
@@ -44,10 +49,10 @@ function Navbar() {
                     < div id="secondCta">Check Trademark</div>
                 </div>
 
-                <div id="toggle-wrapper" onClick={() => dispatch(setNavbar())}>
+                <button id="toggle-wrapper" onClick={() => dispatch(setNavbar())}>
                     <MenuIcon id="toggle" />
 
-                </div>
+                </button>
 
             </div>
 
