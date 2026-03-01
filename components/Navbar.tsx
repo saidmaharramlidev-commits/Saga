@@ -8,15 +8,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 import { setNavbar, setNavbarMode } from "@/redux/counterSlice";
+import { useRouter } from "next/navigation";
+
 
 function Navbar() {
 
 
     const { isNavbarOpen, navbarMode } = useSelector((state: RootState) => state.counter)
     const dispatch = useDispatch()
-
-
-
+    const router = useRouter()
 
 
 
@@ -31,16 +31,31 @@ function Navbar() {
                     <Image id="logo" src={Logo} alt="Logo" />
                 </div>
                 <div id="endpoints" className={isNavbarOpen ? "active" : ''}>
-                    <a href="" className={navbarMode == "home" ? "activeEndpoint" : ''}
-                        onClick={() => dispatch(setNavbarMode("home"))}>Home</a>
-                    <a href="" className={navbarMode == "about" ? "activeEndpoint" : ''}
-                        onClick={() => dispatch(setNavbarMode("about"))}>About</a>
-                    <a href="" className={navbarMode == "services" ? "activeEndpoint" : ''}
-                        onClick={() => dispatch(setNavbarMode("services"))}>Services</a>
-                    <a href="" className={navbarMode == "blog" ? "activeEndpoint" : ''}
-                        onClick={() => dispatch(setNavbarMode("blog"))}>Blog</a>
-                    <a href="" className={navbarMode == "contact" ? "activeEndpoint" : ''}
-                        onClick={() => dispatch(setNavbarMode("contact"))}>Contact</a>
+                    <a href="#" className={navbarMode == "home" ? "activeEndpoint" : ''}
+                        onClick={() => {
+                            dispatch(setNavbarMode("home"))
+                            router.push("/")
+                        }}>Home</a>
+                    <a href="#" className={navbarMode == "about" ? "activeEndpoint" : ''}
+                        onClick={() => {
+                            dispatch(setNavbarMode("about"))
+                            router.push("/about")
+                        }}>About</a>
+                    <a href="#" className={navbarMode == "services" ? "activeEndpoint" : ''}
+                        onClick={() => {
+                            dispatch(setNavbarMode("services"))
+                            router.push("/services")
+                        }}>Services</a>
+                    <a href="#" className={navbarMode == "blog" ? "activeEndpoint" : ''}
+                        onClick={() => {
+                            dispatch(setNavbarMode("blog"))
+                            router.push("/blog")
+                        }}>Blog</a>
+                    <a href="#" className={navbarMode == "contact" ? "activeEndpoint" : ''}
+                        onClick={() => {
+                            dispatch(setNavbarMode("contact"))
+                            router.push("/contact")
+                        }}>Contact</a>
                 </div>
 
                 <div id="navbarCtas">

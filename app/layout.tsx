@@ -14,8 +14,11 @@ import "../css/statistic.css"
 import "../css/faq.css"
 import "../css/companies.css"
 import "../css/animations.css"
+import "../css/reviews.css"
+import "../css/footer.css"
+import "../css/heroOfEndpoints.css"
+import "../css/about.css"
 import { store } from "../redux/store"
-import { Description } from "@mui/icons-material";
 
 
 

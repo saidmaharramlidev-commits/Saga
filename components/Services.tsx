@@ -25,21 +25,21 @@ function Services() {
                         <h1>01</h1>
                         <h4>Example</h4>
                         <div className="ctaService">
-                            <h3>More</h3>
+                            <h5>More</h5>
                         </div>
                     </div>
                     <div className="service">
                         <h1>02</h1>
                         <h4>Example</h4>
                         <div className="ctaService">
-                            <h3>More</h3>
+                            <h5>More</h5>
                         </div>
                     </div>
                     <div className="service">
                         <h1>03</h1>
                         <h4>Example</h4>
                         <div className="ctaService">
-                            <h3>More</h3>
+                            <h5>More</h5>
                         </div>
                     </div>
                     <div className="service">
