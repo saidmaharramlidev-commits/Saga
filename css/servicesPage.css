@@ -166,6 +166,10 @@ p {
         width: 45%;
     }
 
+    #application-process-wrapper h1 {
+        font-size: 1.5rem;
+    }
+
 }
 
 

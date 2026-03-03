@@ -126,9 +126,7 @@ function Services() {
 
 
             <div id="application-process-wrapper">
-                <h1 style={{
-                    fontSize: window.innerWidth <= 600 ? "1.8rem" : "2.5rem",
-                }}
+                <h1
                 >Our application process</h1>
 
                 <div id="process-wrapper">
