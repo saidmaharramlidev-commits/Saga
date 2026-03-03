@@ -93,16 +93,16 @@ function Footer() {
                         <p><PhoneIcon />+1234567890</p>
                         <p><LocationOnIcon />Somewhere in the world</p>
                         <div id="footer-social-medias">
-                            <div className="social-media-icon" onClick={() => window.open("https://www.instagram.com")}>
+                            <div className="social-media-icon" >
                                 <InstagramIcon />
                             </div>
-                            <div className="social-media-icon" onClick={() => window.open("https://www.facebook.com")}>
+                            <div className="social-media-icon" >
                                 <FacebookIcon />
                             </div>
-                            <div className="social-media-icon" onClick={() => window.open("https://www.linkedin.com")}>
+                            <div className="social-media-icon" >
                                 <LinkedInIcon />
                             </div>
-                            <div className="social-media-icon" onClick={() => window.open("https://www.whatsapp.com")}>
+                            <div className="social-media-icon" >
                                 <WhatsAppIcon />
                             </div>
 
