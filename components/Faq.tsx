@@ -141,7 +141,7 @@ function Faq() {
                         <div id='moreFaq-wrapper'>
                             <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                                    <Typography component="span">Question #3</Typography>
+                                    <Typography component="span">Question #4</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
@@ -155,7 +155,7 @@ function Faq() {
 
                             <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                                    <Typography component="span">Question #3</Typography>
+                                    <Typography component="span">Question #5</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
@@ -169,7 +169,7 @@ function Faq() {
 
                             <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                                    <Typography component="span">Question #3</Typography>
+                                    <Typography component="span">Question #6</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
@@ -183,7 +183,7 @@ function Faq() {
 
                             <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                                    <Typography component="span">Question #3</Typography>
+                                    <Typography component="span">Question #7</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>

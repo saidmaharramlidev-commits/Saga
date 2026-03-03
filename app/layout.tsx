@@ -18,6 +18,11 @@ import "../css/reviews.css"
 import "../css/footer.css"
 import "../css/heroOfEndpoints.css"
 import "../css/about.css"
+import "../css/blogPage.css"
+import "../css/contactPage.css"
+import "../css/seminarRegister.css"
+import "../css/checkTrademark.css"
+import "../css/servicesPage.css"
 import { store } from "../redux/store"
 
 

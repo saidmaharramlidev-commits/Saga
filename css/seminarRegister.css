@@ -1,0 +1,95 @@
+#seminarNavbar {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+#textFieldsOfSeminar {
+    margin-top: 70px;
+    justify-self: center;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    gap: 30px;
+}
+
+
+.fieldInSeminar {
+    width: 48%;
+}
+
+#whereDidYou-wrapper {
+    width: 100%;
+}
+
+#whereDidYou-wrapper h3 {
+    color: white;
+}
+
+#whereDidYou-wrapper input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: #1F1F1F;
+
+}
+
+
+#cta-wrapper-seminar {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+#logo-seminar {
+    width: 7%;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media(max-width:900px) {
+    .fieldInSeminar {
+        width: 100%;
+    }
+
+    #textFieldsOfSeminar {
+        gap: 20px;
+    }
+
+    #logo-seminar {
+        width: 11%;
+    }
+
+}
+
+@media(max-width:700px) {
+    #logo-seminar {
+        width: 14%;
+    }
+}
+
+@media(max-width:500px) {
+    #logo-seminar {
+        width: 17%;
+    }
+}
+
+@media(max-width:400px) {
+    #logo-seminar {
+        width: 22%;
+    }
+}

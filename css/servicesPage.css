@@ -1,0 +1,193 @@
+#service-infos {
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+
+
+}
+
+
+#service-sidebar {
+
+    width: 20%;
+    background-color: black;
+    color: white;
+
+}
+
+#service-info {
+    width: 80%;
+}
+
+#service-info h1,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+
+
+
+
+
+#application-process-wrapper {
+    margin-top: 90px;
+    width: 90%;
+    justify-self: center;
+    padding-bottom: 80px;
+}
+
+
+#application-process-wrapper h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#process-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+
+.process {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.emoji-wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1100px) {
+    #process-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .process {
+        width: 25%;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+@media(max-width:1000px) {
+    #service-sidebar {
+        width: 30%;
+    }
+
+    #service-info {
+        width: 70%;
+    }
+
+}
+
+
+@media(max-width:900px) {
+
+
+    .process {
+        width: 30%;
+    }
+
+}
+
+
+
+@media(max-width:700px) {
+    #service-infos {
+        flex-direction: column;
+    }
+
+    #service-sidebar {
+        width: 100%;
+    }
+
+    #service-info {
+        width: 100%;
+    }
+
+    .process {
+        width: 40%;
+    }
+}
+
+@media(max-width:600px) {
+
+
+    .process {
+        width: 45%;
+    }
+
+}
+
+
+@media(max-width:500px) {
+
+    #service-info h1 {
+        font-size: 1.5rem;
+    }
+
+    #service-info p {
+        font-size: 0.8rem;
+    }
+
+    .emoji-wrapper {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+@media(max-width:500px) {
+    .process {
+        width: 80%;
+    }
+}

@@ -34,7 +34,9 @@
     height: 100%;
 }
 
-
+#sidebar-logo-wrapper {
+    display: none;
+}
 
 #endpoints {
     display: flex;
@@ -112,6 +114,11 @@
     cursor: pointer;
     transition: 0.6s;
 
+
+}
+
+#mobileCtas {
+    display: none;
 }
 
 
@@ -136,6 +143,63 @@
 }
 
 @media(max-width:1100px) {
+
+    #sidebar-logo-wrapper {
+        display: block;
+    }
+
+    #sidebar-logo-wrapper {
+        width: 25%;
+        height: 100px;
+        cursor: pointer;
+    }
+
+
+    #sidebar-logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    #mobileCtas {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    #mobileCtas div {
+        width: 100%;
+        margin: 0 auto;
+        height: 45px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        transition: 0.6s;
+    }
+
+    #mobileCtas #firstCta {
+        background-color: #1f1f1f;
+        color: #D3F200;
+    }
+
+    #mobileCtas #firstCta:hover {
+        background-color: #D3F200;
+        color: #1f1f1f;
+    }
+
+    #mobileCtas #secondCta {
+        background-color: #D3F200;
+        color: #1f1f1f;
+    }
+
+    #mobileCtas #secondCta:hover {
+        background-color: #d2f200a4;
+    }
+
     #logo-wrapper {
         width: 12%;
     }
@@ -157,27 +221,31 @@
     }
 
     #endpoints {
-        position: absolute;
+        position: fixed;
         flex-direction: column;
         background-color: black;
         z-index: 1000;
-        width: 60%;
+        width: 50%;
         height: 100vh;
-        align-items: start;
         top: 0;
+        text-align: center;
         transition: 0.6s;
+        opacity: 0;
 
-        left: -60%;
+        left: -50%;
     }
 
     #endpoints a {
         display: block;
         border-bottom: 1px solid gray;
-        width: 80%;
-        padding: 15px;
+        width: 100%;
+        font-size: 1.5rem;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
 
     #endpoints.active {
+        opacity: 1;
         left: 0;
         transition: 0.6s;
     }
@@ -188,6 +256,17 @@
 @media(max-width:800px) {
     #logo-wrapper {
         width: 16%;
+    }
+
+    #endpoints a {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:700px) {
+    #sidebar-logo-wrapper {
+        width: 35%;
+
     }
 }
 
@@ -205,10 +284,32 @@
     #toggle-wrapper {
         height: 80px;
     }
+
+    #mobileCtas {
+        width: 80%;
+    }
 }
+
+
+@media(max-width:500px) {
+    #sidebar-logo-wrapper {
+        width: 45%;
+
+    }
+}
+
 
 @media(max-width:400px) {
     #logo-wrapper {
         width: 28%;
+    }
+
+    #sidebar-logo-wrapper {
+        width: 55%;
+
+    }
+
+    #mobileCtas div {
+        font-size: 0.8rem;
     }
 }

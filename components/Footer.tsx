@@ -1,3 +1,6 @@
+"use client"
+
+
 import Image from "next/image"
 import logo from "../public/navbarLogo.png"
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -7,6 +10,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import { useRouter } from "next/navigation";
+import { useDispatch } from "react-redux";
+import { setNavbarMode } from "@/redux/counterSlice";
 
 
 
@@ -18,6 +24,15 @@ import EmailIcon from '@mui/icons-material/Email';
 
 
 function Footer() {
+
+
+    const router = useRouter()
+    const dispatch = useDispatch()
+
+
+
+
+
     return (
         <div id="mainFooter">
 
@@ -28,19 +43,47 @@ function Footer() {
                     </div>
                     <div className="endpointsFooter">
                         <h2>Quick Links</h2>
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Blog</a>
-                        <a href="">Contact</a>
+                        <a href="#" onClick={() => {
+                            router.push("/")
+                            dispatch(setNavbarMode("home"))
+
+                        }}>Home</a>
+                        <a href="#" onClick={() => {
+                            router.push("/about")
+                            dispatch(setNavbarMode("about"))
+
+                        }}>About</a>
+                        <a href="#" onClick={() => {
+                            router.push("/blog")
+                            dispatch(setNavbarMode("blog"))
+
+                        }}>Blog</a>
+                        <a href="#" onClick={() => {
+                            router.push("/contact")
+                            dispatch(setNavbarMode("contact"))
+
+                        }}>Contact</a>
 
                     </div>
 
                     <div className="endpointsFooter">
                         <h2>Services</h2>
-                        <a href="">Service 1</a>
-                        <a href="">Service 2</a>
-                        <a href="">Service 3</a>
-                        <a href="">Service 4</a>
+                        <a href="#" onClick={() => {
+                            router.push('/services')
+                            dispatch(setNavbarMode("services"))
+                        }}>Service 1</a>
+                        <a href="#" onClick={() => {
+                            router.push('/services')
+                            dispatch(setNavbarMode("services"))
+                        }}>Service 2</a>
+                        <a href="#" onClick={() => {
+                            router.push('/services')
+                            dispatch(setNavbarMode("services"))
+                        }}>Service 3</a>
+                        <a href="#" onClick={() => {
+                            router.push('/services')
+                            dispatch(setNavbarMode("services"))
+                        }}>Service 4</a>
 
                     </div>
 
@@ -50,16 +93,16 @@ function Footer() {
                         <p><PhoneIcon />+1234567890</p>
                         <p><LocationOnIcon />Somewhere in the world</p>
                         <div id="footer-social-medias">
-                            <div className="social-media-icon">
+                            <div className="social-media-icon" onClick={() => window.open("https://www.instagram.com")}>
                                 <InstagramIcon />
                             </div>
-                            <div className="social-media-icon">
+                            <div className="social-media-icon" onClick={() => window.open("https://www.facebook.com")}>
                                 <FacebookIcon />
                             </div>
-                            <div className="social-media-icon">
+                            <div className="social-media-icon" onClick={() => window.open("https://www.linkedin.com")}>
                                 <LinkedInIcon />
                             </div>
-                            <div className="social-media-icon">
+                            <div className="social-media-icon" onClick={() => window.open("https://www.whatsapp.com")}>
                                 <WhatsAppIcon />
                             </div>
 
