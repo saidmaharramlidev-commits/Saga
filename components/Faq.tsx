@@ -12,6 +12,7 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 import { Button } from '@mui/material';
+import { useRouter } from 'next/navigation';
 
 
 
@@ -77,6 +78,8 @@ function Faq() {
     const handleMore = () => {
         setOpenMore(!openMore)
     }
+
+    const router = useRouter()
 
 
 
@@ -209,7 +212,9 @@ function Faq() {
                 <div id='stillQuiz'>
                     <h1>Still you have questions?</h1>
                     <h2>We are ready to answer.</h2>
-                    <div id='quizCta-wrapper'>
+                    <div id='quizCta-wrapper' onClick={() => {
+                        router.push("/contact")
+                    }}>
                         <Button id='quizCta'>I have Question</Button>
                     </div>
 
