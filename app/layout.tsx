@@ -1,11 +1,8 @@
-"use client"
-
-const metadata = {
+export const metadata = {
   title: "Saga",
   description: "It is website that inspired by ega.az"
 }
 
-import { Provider } from "react-redux";
 import "./globals.css";
 import "../css/hero.css"
 import "../css/navbar.css"
@@ -21,25 +18,23 @@ import "../css/about.css"
 import "../css/blogPage.css"
 import "../css/contactPage.css"
 import "../css/seminarRegister.css"
-import "../css/checkTrademark.css"
 import "../css/servicesPage.css"
-import { store } from "../redux/store"
+import Providers from "./providers";
 
 
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <Provider store={store}>
-        <body>
+      <body>
+        <Providers>
           {children}
-        </body>
-      </Provider>
-
+        </Providers>
+      </body>
     </html>
-  );
+  )
 }
